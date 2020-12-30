@@ -43,5 +43,7 @@ lst_info lst_last(lst_ptr l);
 
 void lst_remover(lst_ptr l, int);
 
+void lst_imprimir_cresc(lst_ptr l);
+
 #endif //_LST_ADPT_
 

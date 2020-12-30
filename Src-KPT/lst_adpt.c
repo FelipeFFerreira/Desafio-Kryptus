@@ -48,6 +48,7 @@ lst_ptr lst_get(lst_ptr l, int k)
             p = p->prox;
         return p;
 	}
+	return NULL;
 }
 
 void lst_remover(lst_ptr l, int k)
@@ -75,6 +76,24 @@ lst_info lst_first(lst_ptr l)
     return -1;
 }
 
+void lst_put_ord(lst_ptr l, lst_info val) {
+	lst_ptr n, p;
+	if ((n = (lst_ptr) malloc(sizeof(struct lst_no))) == NULL) {
+		printf("Error ao inserir na Lista [Alocacao de memoria]");
+		exit(1);;
+	}
+	n->dado = val;
+    p = l;
+    while (p->prox != l && val > p->prox->dado) {
+        p = p->prox;
+    }
+    n->prox = p->prox;
+    n->ant = p;
+    p->prox->ant = n;
+    p->prox = n;
+    ++l->dado;
+}
+
 void lst_print_cresc(lst_ptr l)
 {
     lst_ptr p = l->prox;
@@ -96,4 +115,17 @@ void lst_printf_dec(lst_ptr l)
     }
     printf("\b ]\n");
 }
+
+void lst_imprimir_cresc(lst_ptr l)
+{
+    lst_ptr p, q = l->prox;
+    lst_init(&p);
+    while (q->prox != l) {
+        lst_put_ord(p, q->dado);
+        q = q->prox;
+    }
+
+    lst_print_cresc(p);
+}
+
 

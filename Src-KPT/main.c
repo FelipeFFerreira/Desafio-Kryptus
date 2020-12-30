@@ -17,7 +17,8 @@ int main()
         printf("\t<4> Obter Last elemento\n");
         printf("\t<5> Remover K elemento da lista\n");
         printf("\t<6> Imprimir lista\n");
-        printf("\t<7> Tamanho da lista\n");
+        printf("\t<7> Imprimir lista crescente\n");
+        printf("\t<8> Tamanho da lista\n");
         printf("\t<0> Sair\n");
         printf("\tOpcao: ");
         scanf("%d", &op);
@@ -50,7 +51,7 @@ int main()
                     break;
 
             case 7: printf("\n\tLista em ordem decrescente\n\t");
-            		lst_printf_dec(l);
+            		lst_imprimir_cresc(l);
                     break;
 
             case 8: printf("\n\tTamanho da lista: ");
