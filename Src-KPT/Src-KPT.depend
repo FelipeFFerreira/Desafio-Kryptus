@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1609349385 source:c:\github\desafio-kpt\src-kpt\lst_adpt.c
+	"lst_adpt.h"
+	<stdio.h>
+	<stdlib.h>
+
+1609349390 c:\github\desafio-kpt\src-kpt\lst_adpt.h
+	<stdbool.h>
+
+1609349569 source:c:\github\desafio-kpt\src-kpt\main.c
+	<stdio.h>
+	"lst_adpt.h"
+
+1609349385 source:c:\github\desafio-kryptus\src-kpt\lst_adpt.c
+	"lst_adpt.h"
+	<stdio.h>
+	<stdlib.h>
+
+1609349390 c:\github\desafio-kryptus\src-kpt\lst_adpt.h
+	<stdbool.h>
+
+1609349633 source:c:\github\desafio-kryptus\src-kpt\main.c
+	<stdio.h>
+	"lst_adpt.h"
+
