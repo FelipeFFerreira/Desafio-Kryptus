@@ -27,11 +27,8 @@ int lst_len(lst_ptr);
 /* função que insere um novo nó na lista ordenada */
 void lst_put(lst_ptr, lst_info);
 
-
-/* função que imprime a lista em ordem crescente */
 void lst_print_cresc(lst_ptr);
 
-/* função que imprime a lista em ordem decrescente */
 void lst_printf_dec(lst_ptr);
 
 lst_ptr lst_get(lst_ptr, int);
